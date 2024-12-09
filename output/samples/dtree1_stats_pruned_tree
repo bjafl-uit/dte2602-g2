@@ -1,0 +1,9 @@
+digraph Tree {
+    node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+    edge [fontname="helvetica"] ;
+    0 [label="flipper_length \<= 0.433\ngini = 0.464\nsamples = 273\nvalue = [173, 100]\nclass = Other", fillcolor="#c3daea"] ;
+    0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+    0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+    1 [label="gini = 0.011\nsamples = 173\nvalue = [172, 1]\nclass = Other", fillcolor="#2178b4"] ;
+    2 [label="gini = 0.020\nsamples = 100\nvalue = [1, 99]\nclass = Gentoo", fillcolor="#ff8112"] ;
+}

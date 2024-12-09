@@ -166,6 +166,7 @@ cython_debug/
 
 # Other
 temp/
-output/
+output/*
+!output/samples/
 **/latex/*
 !**/latex/*\.tex

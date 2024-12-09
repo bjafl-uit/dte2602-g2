@@ -1,0 +1,37 @@
+digraph Tree {
+    node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+    edge [fontname="helvetica"] ;
+    0 [label="flipper_length \<= 0.362\ngini = 0.636\nsamples = 273\nvalue = [117, 53, 103]\nclass = Adelie", fillcolor="#ffffff"] ;
+    0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+    0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+    1 [label="bill_length \<= -0.151\ngini = 0.425\nsamples = 166\nvalue = [116, 49, 1]\nclass = Adelie", fillcolor="#a5c8e1"] ;
+    1 -> 2 ;
+    1 -> 9 ;
+    2 [label="bill_length \<= -0.316\ngini = 0.034\nsamples = 114\nvalue = [112, 2, 0]\nclass = Adelie", fillcolor="#267bb6"] ;
+    2 -> 3 ;
+    2 -> 8 ;
+    3 [label="bill_depth \<= -0.28\ngini = 0.018\nsamples = 109\nvalue = [108, 1, 0]\nclass = Adelie", fillcolor="#2379b5"] ;
+    3 -> 4 ;
+    3 -> 7 ;
+    4 [label="bill_length \<= -1.14\ngini = 0.180\nsamples = 10\nvalue = [9, 1, 0]\nclass = Adelie", fillcolor="#4b92c3"] ;
+    4 -> 5 ;
+    4 -> 6 ;
+    5 [label="gini = 0.000\nsamples = 8\nvalue = [8, 0, 0]\nclass = Adelie", fillcolor="#1f77b4"] ;
+    6 [label="gini = 0.500\nsamples = 2\nvalue = [1, 1, 0]\nclass = Adelie", fillcolor="#ffffff"] ;
+    7 [label="gini = 0.000\nsamples = 99\nvalue = [99, 0, 0]\nclass = Adelie", fillcolor="#1f77b4"] ;
+    8 [label="gini = 0.320\nsamples = 5\nvalue = [4, 1, 0]\nclass = Adelie", fillcolor="#78add2"] ;
+    9 [label="body_mass \<= -0.127\ngini = 0.177\nsamples = 52\nvalue = [4, 47, 1]\nclass = Chinstrap", fillcolor="#ff973c"] ;
+    9 -> 10 ;
+    9 -> 11 ;
+    10 [label="gini = 0.000\nsamples = 40\nvalue = [0, 40, 0]\nclass = Chinstrap", fillcolor="#ff7f0e"] ;
+    11 [label="bill_length \<= 0.821\ngini = 0.542\nsamples = 12\nvalue = [4, 7, 1]\nclass = Chinstrap", fillcolor="#ffe9d6"] ;
+    11 -> 12 ;
+    11 -> 13 ;
+    12 [label="gini = 0.500\nsamples = 6\nvalue = [4, 1, 1]\nclass = Adelie", fillcolor="#b4d1e6"] ;
+    13 [label="gini = 0.000\nsamples = 6\nvalue = [0, 6, 0]\nclass = Chinstrap", fillcolor="#ff7f0e"] ;
+    14 [label="bill_depth \<= 0.0755\ngini = 0.090\nsamples = 107\nvalue = [1, 4, 102]\nclass = Gentoo", fillcolor="#3fa83f"] ;
+    14 -> 15 ;
+    14 -> 16 ;
+    15 [label="gini = 0.000\nsamples = 102\nvalue = [0, 0, 102]\nclass = Gentoo", fillcolor="#2ca02c"] ;
+    16 [label="gini = 0.320\nsamples = 5\nvalue = [1, 4, 0]\nclass = Chinstrap", fillcolor="#ffb26e"] ;
+}

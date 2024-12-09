@@ -1,0 +1,54 @@
+{
+    "model": "PerceptronOVAClassifier",
+    "model_props": {
+        "n_inputs": 4,
+        "n_classes": 3,
+        "hyperparameters": {
+            "learning_rate": 0.095,
+            "max_epochs": 300,
+            "accuracy_goal": 1.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            151,
+            0,
+            0
+        ],
+        [
+            4,
+            64,
+            0
+        ],
+        [
+            0,
+            0,
+            123
+        ]
+    ],
+    "precision": {
+        "Adelie": 0.9741935483870968,
+        "Chinstrap": 1.0,
+        "Gentoo": 1.0,
+        "mean": 0.9913978494623655
+    },
+    "recall": {
+        "Adelie": 1.0,
+        "Chinstrap": 0.9411764705882353,
+        "Gentoo": 1.0,
+        "mean": 0.9803921568627452
+    },
+    "b_score": {
+        "Adelie": 0.9870967741935484,
+        "Chinstrap": 0.9705882352941176,
+        "Gentoo": 1.0,
+        "mean": 0.9858950031625553
+    },
+    "f_score": {
+        "Adelie": 0.9869281045751634,
+        "Chinstrap": 0.9696969696969697,
+        "Gentoo": 1.0,
+        "mean": 0.9855416914240444
+    },
+    "weighted_mean_accuracy": 0.9886059234106773
+}

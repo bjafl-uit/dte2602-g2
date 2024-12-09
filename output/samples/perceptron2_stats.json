@@ -1,0 +1,48 @@
+{
+    "model": "Perceptron",
+    "model_props": {
+        "n_features": 2,
+        "weights": [
+            0.13269295280000612,
+            0.13978180031816637
+        ],
+        "bias": -0.19000000000000003,
+        "converged": false,
+        "hyperparameters": {
+            "learning_rate": 0.095,
+            "max_epochs": 300,
+            "accuracy_goal": 1.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            265,
+            9
+        ],
+        [
+            29,
+            39
+        ]
+    ],
+    "precision": {
+        "Other": 0.9013605442176871,
+        "Chinstrap": 0.8125,
+        "mean": 0.8569302721088435
+    },
+    "recall": {
+        "Other": 0.9671532846715328,
+        "Chinstrap": 0.5735294117647058,
+        "mean": 0.7703413482181194
+    },
+    "b_score": {
+        "Other": 0.93425691444461,
+        "Chinstrap": 0.6930147058823529,
+        "mean": 0.8136358101634815
+    },
+    "f_score": {
+        "Other": 0.9330985915492958,
+        "Chinstrap": 0.6724137931034482,
+        "mean": 0.802756192326372
+    },
+    "weighted_mean_accuracy": 0.883692365835223
+}

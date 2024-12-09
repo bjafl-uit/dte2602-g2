@@ -1,0 +1,46 @@
+{
+    "model": "DecisionTree",
+    "model_props": {
+        "n_features": 2,
+        "n_classes": 2,
+        "n_nodes": 7,
+        "n_nodes_post_pruned": -1,
+        "hyperparameters": {
+            "max_depth": 8,
+            "min_samples_split": 100,
+            "min_samples_leaf": 50,
+            "post_prune": false
+        }
+    },
+    "confusion_matrix": [
+        [
+            54,
+            2
+        ],
+        [
+            3,
+            10
+        ]
+    ],
+    "precision": {
+        "Other": 0.9473684210526315,
+        "Chinstrap": 0.8333333333333334,
+        "mean": 0.8903508771929824
+    },
+    "recall": {
+        "Other": 0.9642857142857143,
+        "Chinstrap": 0.7692307692307693,
+        "mean": 0.8667582417582418
+    },
+    "b_score": {
+        "Other": 0.9558270676691729,
+        "Chinstrap": 0.8012820512820513,
+        "mean": 0.8785545594756121
+    },
+    "f_score": {
+        "Other": 0.9557522123893805,
+        "Chinstrap": 0.8,
+        "mean": 0.8778761061946903
+    },
+    "weighted_mean_accuracy": 0.9258835494533435
+}

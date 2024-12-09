@@ -1,0 +1,29 @@
+digraph Tree {
+    node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+    edge [fontname="helvetica"] ;
+    0 [label="flipper_length \<= 0.291\ngini = 0.635\nsamples = 273\nvalue = [125, 56, 92]\nclass = Adelie", fillcolor="#ffffff"] ;
+    0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+    0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+    1 [label="bill_length \<= -0.132\ngini = 0.424\nsamples = 176\nvalue = [123, 52, 1]\nclass = Adelie", fillcolor="#a5c8e1"] ;
+    1 -> 2 ;
+    1 -> 7 ;
+    2 [label="bill_length \<= -0.316\ngini = 0.062\nsamples = 125\nvalue = [121, 4, 0]\nclass = Adelie", fillcolor="#2d7fb8"] ;
+    2 -> 3 ;
+    2 -> 6 ;
+    3 [label="bill_depth \<= -0.229\ngini = 0.017\nsamples = 116\nvalue = [115, 1, 0]\nclass = Adelie", fillcolor="#2279b5"] ;
+    3 -> 4 ;
+    3 -> 5 ;
+    4 [label="gini = 0.219\nsamples = 8\nvalue = [7, 1, 0]\nclass = Adelie", fillcolor="#5799c6"] ;
+    5 [label="gini = 0.000\nsamples = 108\nvalue = [108, 0, 0]\nclass = Adelie", fillcolor="#1f77b4"] ;
+    6 [label="gini = 0.444\nsamples = 9\nvalue = [6, 3, 0]\nclass = Adelie", fillcolor="#b4d1e6"] ;
+    7 [label="body_mass \<= -0.127\ngini = 0.112\nsamples = 51\nvalue = [2, 48, 1]\nclass = Chinstrap", fillcolor="#ff8e2a"] ;
+    7 -> 8 ;
+    7 -> 9 ;
+    8 [label="gini = 0.000\nsamples = 43\nvalue = [0, 43, 0]\nclass = Chinstrap", fillcolor="#ff7f0e"] ;
+    9 [label="gini = 0.531\nsamples = 8\nvalue = [2, 5, 1]\nclass = Chinstrap", fillcolor="#ffdfc2"] ;
+    10 [label="bill_depth \<= -0.0259\ngini = 0.118\nsamples = 97\nvalue = [2, 4, 91]\nclass = Gentoo", fillcolor="#46ab46"] ;
+    10 -> 11 ;
+    10 -> 12 ;
+    11 [label="gini = 0.000\nsamples = 89\nvalue = [0, 0, 89]\nclass = Gentoo", fillcolor="#2ca02c"] ;
+    12 [label="gini = 0.625\nsamples = 8\nvalue = [2, 4, 2]\nclass = Chinstrap", fillcolor="#ffffff"] ;
+}

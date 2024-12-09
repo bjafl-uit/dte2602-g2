@@ -1,0 +1,57 @@
+{
+    "model": "DecisionTree",
+    "model_props": {
+        "n_features": 4,
+        "n_classes": 3,
+        "n_nodes": 25,
+        "n_nodes_post_pruned": -1,
+        "hyperparameters": {
+            "max_depth": -1,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "post_prune": false
+        }
+    },
+    "confusion_matrix": [
+        [
+            149,
+            2,
+            0
+        ],
+        [
+            0,
+            68,
+            0
+        ],
+        [
+            0,
+            0,
+            123
+        ]
+    ],
+    "precision": {
+        "Adelie": 1.0,
+        "Chinstrap": 0.9714285714285714,
+        "Gentoo": 1.0,
+        "mean": 0.9904761904761905
+    },
+    "recall": {
+        "Adelie": 0.9867549668874173,
+        "Chinstrap": 1.0,
+        "Gentoo": 1.0,
+        "mean": 0.9955849889624724
+    },
+    "b_score": {
+        "Adelie": 0.9933774834437086,
+        "Chinstrap": 0.9857142857142858,
+        "Gentoo": 1.0,
+        "mean": 0.9930305897193316
+    },
+    "f_score": {
+        "Adelie": 0.9933333333333334,
+        "Chinstrap": 0.9855072463768115,
+        "Gentoo": 1.0,
+        "mean": 0.9929468599033816
+    },
+    "weighted_mean_accuracy": 0.9943191311612363
+}
