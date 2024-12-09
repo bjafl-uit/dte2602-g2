@@ -13,6 +13,8 @@ Contains my code subission and report for the graded assignment _Supervised Lear
 - The report is the [pdf in the project root](dte2602-fa24-graded2-bfl.pdf). 
 - The main script that runs the experiments and demonstrates the implemented modules
 is contained in `supervised_learning.py` in the project root.
+- The file [page count](page%20count.odt) is supplied for easy measuring of page count for the
+text content in the report. 
 
 ## Repository Structure
 
