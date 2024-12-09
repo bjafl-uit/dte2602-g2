@@ -43,7 +43,6 @@ if __name__ != '__main__':
 
 import numpy as np
 from numpy.typing import NDArray
-import graphviz
 import matplotlib.pyplot as plt
 from typing import Literal, Any, Optional, Union, Iterable
 import json
@@ -69,6 +68,18 @@ from models.decicion_tree import DecisionTree, DTHyperparams
 from models.perceptron import Perceptron, PerceptronHyperparams, \
     scatter_plot_decision_boundaries
 from models.perceptron_ova import PerceptronOVAClassifier as PerceptronOVA
+
+
+# Import graphviz if available, to generate SVG images of DTs
+try:
+    import graphviz
+    gviz_imported = True
+except ImportError:
+    warnings.warn(
+        "Graphviz lib missing. DTs will only be graphed in DOT " +
+        "text-files, no svg-images will be exported."
+    )
+    gviz_imported = False
 
 
 def load_palmer_penguins(
@@ -386,8 +397,12 @@ def dtree_stats(y_labels, X_test, y_test, dtree, path):
 
     # Save decision tree graph
     dot_str = dtree.generate_dot()
-    gviz = graphviz.Source(dot_str)
-    gviz.render(f'{path}_tree', format='svg')
+    if gviz_imported:
+        gviz = graphviz.Source(dot_str)
+        gviz.render(f'{path}_tree', format='svg')
+    else:
+        with open(f'{path}_tree.dot', 'w') as f:
+            f.write(dot_str)
 
     # Save stats
     save_stats(dtree, X_test, y_test, y_labels, path)

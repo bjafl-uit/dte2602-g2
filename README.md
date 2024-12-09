@@ -70,6 +70,11 @@ The results will be saved in the `output/` directory.
 - Matplotlib
 
 
+> ### Optional
+> - Graphviz 
+> 
+> _To generate SVG files from DOT graphs of Descicion Trees_
+
 ## License
 
 This project is licensed under the MIT License.
