@@ -33,7 +33,7 @@ from pathlib import Path
 import numpy as np
 
 # File paths
-ASSETS_DIR = Path(__file__).parent.parent / 'assets'
+ASSETS_DIR = Path(__file__).parent / 'assets'
 PENGUIN_DATA_PATH = ASSETS_DIR / 'palmer_penguins.csv'
 OUTPUT_DIR = ASSETS_DIR.parent / 'output'
 
